@@ -1,0 +1,43 @@
+{
+  "version": "1.0.0",
+  "updated": "2026-09-22T10:23:00+08:00",
+  "panelType": "xboard",
+  "panels": {
+    "aurosa": [
+      {
+        "url": "https://139.224.72.62:8443",
+        "description": "上海中转节点",
+        "priority": 100
+      },
+      {
+        "url": "https://dash.aurosa.net",
+        "description": "主面板（直连）",
+        "priority": 90
+      }
+    ]
+  },
+  "proxy": [
+    {
+      "url": "socks5://139.224.72.62:1080",
+      "description": "上海 SOCKS5 代理",
+      "protocol": "s5",
+      "priority": 100
+    }
+  ],
+  "onlineSupport": [
+    {
+      "url": "https://dash.aurosa.net/support",
+      "description": "在线客服",
+      "apiBaseUrl": "https://dash.aurosa.net",
+      "wsBaseUrl": "wss://dash.aurosa.net"
+    }
+  ],
+  "cdn": {
+    "jsdelivr": "https://cdn.jsdelivr.net/gh/TangSengVIP/config@main/config.json",
+    "ghproxy": "https://ghproxy.com/https://raw.githubusercontent.com/TangSengVIP/config/main/config.json"
+  },
+  "fallback": {
+    "retry": 3,
+    "timeout": 10
+  }
+}
