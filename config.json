@@ -1,6 +1,6 @@
 {
-  "version": "1.0.0",
-  "updated": "2026-09-27T08:05:00+08:00",
+  "version": "1.0.1",
+  "updated": "2026-09-27T09:50:00+08:00",
   "panelType": "xboard",
   "panels": {
     "aurosa": [
@@ -18,11 +18,6 @@
         "url": "https://api.titslee.eu",
         "description": "Cloudflare Worker 中转 (CDN 2)",
         "priority": 90
-      },
-      {
-        "url": "https://dash.aurosa.net",
-        "description": "主面板（直连，仅海外/网络畅通用户）",
-        "priority": 80
       }
     ]
   },
@@ -34,14 +29,19 @@
       "priority": 100
     }
   ],
-  "onlineSupport": [
-    {
-      "url": "https://dash.aurosa.net/support",
-      "description": "在线客服",
-      "apiBaseUrl": "https://dash.aurosa.net",
-      "wsBaseUrl": "wss://dash.aurosa.net"
-    }
-  ],
+  "onlineSupport": {
+    "url": "https://dash.aurosa.net",
+    "description": "在线客服（XBoard 前端 SPA）",
+    "apiBaseUrl": "https://dash.aurosa.net/api",
+    "wsBaseUrl": "wss://dash.aurosa.net/ws",
+    "note": "dash.aurosa.net 是前端 SPA; XBoard 后端 API 在 manage.aurosa.net, 但该域仅海外可达, 国内已通过 CDN Worker 中转。客服工单/聊天功能请在浏览器中打开 dash.aurosa.net。"
+  },
+  "frontend": {
+    "url": "https://dash.aurosa.net",
+    "description": "XBoard 前端 SPA（仅供浏览器访问）",
+    "apiBackend": "https://manage.aurosa.net",
+    "note": "本仓库不提供前端站点, 仅配置 API 节点。浏览器请直接访问 dash.aurosa.net。"
+  },
   "cdn": {
     "jsdelivr": "https://cdn.jsdelivr.net/gh/TangSengVIP/config@main/config.json",
     "ghproxy": "https://ghproxy.com/https://raw.githubusercontent.com/TangSengVIP/config/main/config.json"
