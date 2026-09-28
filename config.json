@@ -1,6 +1,6 @@
 {
-  "version": "1.0.1",
-  "updated": "2026-09-27T09:50:00+08:00",
+  "version": "1.0.2",
+  "updated": "2026-09-28T09:20:00+08:00",
   "panelType": "xboard",
   "panels": {
     "aurosa": [
@@ -44,7 +44,7 @@
   },
   "cdn": {
     "jsdelivr": "https://cdn.jsdelivr.net/gh/TangSengVIP/config@main/config.json",
-    "ghproxy": "https://ghproxy.com/https://raw.githubusercontent.com/TangSengVIP/config/main/config.json"
+    "ghproxy": "https://ghproxy.net/https://raw.githubusercontent.com/TangSengVIP/config/main/config.json"
   },
   "fallback": {
     "retry": 3,
