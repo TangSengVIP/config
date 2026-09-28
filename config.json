@@ -43,9 +43,10 @@
     "note": "本仓库不提供前端站点, 仅配置 API 节点。浏览器请直接访问 dash.aurosa.net。"
   },
   "cdn": {
-    "jsdelivr": "https://cdn.jsdelivr.net/gh/TangSengVIP/config@f54ec3d/config.json",
+    "jsdelivr": "https://cdn.jsdelivr.net/gh/TangSengVIP/config@af1e077/config.json",
     "jsdelivrMain": "https://cdn.jsdelivr.net/gh/TangSengVIP/config@main/config.json",
-    "ghproxy": "https://ghproxy.net/https://raw.githubusercontent.com/TangSengVIP/config/main/config.json"
+    "ghproxy": "https://ghproxy.net/https://raw.githubusercontent.com/TangSengVIP/config/main/config.json",
+    "_note": "jsdelivr pinned to af1e077 to bypass stale cache; revert to @main after 24h"
   },
   "fallback": {
     "retry": 3,
