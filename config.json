@@ -1,6 +1,6 @@
 {
-  "version": "1.0.2",
-  "updated": "2026-09-28T09:20:00+08:00",
+  "version": "1.0.3",
+  "updated": "2026-09-28T09:25:00+08:00",
   "panelType": "xboard",
   "panels": {
     "aurosa": [
@@ -43,7 +43,8 @@
     "note": "本仓库不提供前端站点, 仅配置 API 节点。浏览器请直接访问 dash.aurosa.net。"
   },
   "cdn": {
-    "jsdelivr": "https://cdn.jsdelivr.net/gh/TangSengVIP/config@main/config.json",
+    "jsdelivr": "https://cdn.jsdelivr.net/gh/TangSengVIP/config@f54ec3d/config.json",
+    "jsdelivrMain": "https://cdn.jsdelivr.net/gh/TangSengVIP/config@main/config.json",
     "ghproxy": "https://ghproxy.net/https://raw.githubusercontent.com/TangSengVIP/config/main/config.json"
   },
   "fallback": {
